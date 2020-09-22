@@ -86,7 +86,7 @@ const InvoicesPages = (props) => {
             <table className="table table-hover">
                 <thead>
                     <tr>
-                        <th>Numéro</th>
+                        <th>n°</th>
                         <th>Client</th>
                         <th className="text-center">Date d'envoi</th>
                         <th className="text-center">Statut</th>
@@ -103,7 +103,7 @@ const InvoicesPages = (props) => {
                             </td>
                             <td className="text-center">{formatData(invoice.sentAt)}</td>
                             <td className="text-center">
-                                <span class={"badge badge-" + STATUS_CLASSES[invoice.status]}>{STATUS_LABELS[invoice.status]}</span>
+                                <span className={"badge badge-" + STATUS_CLASSES[invoice.status]}>{STATUS_LABELS[invoice.status]}</span>
                             </td>
                             <td className="text-center">{invoice.amount.toLocaleString()} €</td>
                             <td>
